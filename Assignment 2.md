@@ -30,7 +30,7 @@ This string of pure data will be stored in a single file, probably in the binary
 
 Now, since Number Values for the amount of Red, Green and Blue is used to represent a range of colors in a very efficient manner, I will probably propose an Inefficient way to represent colors instead.
 
-One idea would be to instead break a the color spectrum into a Cartesian plane instead, where each colors are just represented by two numbers, the X and the Y values and a decoder will try to reconstruct those values by referring to the Cartesian plane that contains the colors. This means that there are a vastly smaller amount of colors to choose from but it should theoretically reduce the amount of data to be stored right?
+My proposal would be to instead break a the color spectrum into a Cartesian plane instead, where each colors are just represented by two numbers, the X and the Y values and a decoder will try to reconstruct those values by referring to the Cartesian plane that contains the colors. This means that there are a vastly smaller amount of colors to choose from but it should theoretically reduce the amount of data to be stored right?
 
 This idea came up when I remembered a YouTube video about "Rare Team Fortress Two Cosmetic Colors" where the cosmetic colors are randomly chosen from a Rainbow looking Color Pallete using the X and Y coordinates. The rarest of which is a small 20x20 pixel wide box of the color White that appears in the middle of the Color Pallete, meaning it is a very rare thing to get. And since this method was not discussed in class, then it should technically count.
 
