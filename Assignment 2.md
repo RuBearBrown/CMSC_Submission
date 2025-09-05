@@ -1,6 +1,6 @@
 # Assignment 2: It's all numbers.
 
-If I understand correctly Sir, the Assignment asks for a proposal of either another type of data being Represented by numbers, or another way a data gets represented with numbers. I will answer both either way because I do not have enough time to ask for a question.
+If I understand correctly Sir, the Assignment asks for a proposal of either another type of data being Represented by numbers, or another way a data gets represented with numbers. I will answer both either way because I do not have enough time that question.
 
 1. Another Type of Data being represented:
 
