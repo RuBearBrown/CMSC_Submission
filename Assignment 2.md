@@ -6,7 +6,7 @@ If I understand correctly Sir, the Assignment asks for a proposal of either anot
 
 I have though of a new type of data format (or atleast a type of Data Format that if exists a real world counterpart, I am just not aware of) specifically designed for AI Language Models, especially for "Companion" type Models in which, certain informations must be remembered to continue the context of a conversation.
 
-As you have discussed sir, certain data requires more complex ways of storage than just the simple Hexadecimal or RGB format for Colors or Unicode for Characters. An example that you have given sir, is Music, in which Melodies, Instrument type, Tempo and Sound Duration are all stored in their own ways.
+As you have discussed sir, certain data requires more complex ways of storage than just the simple Hexadecimal or RGB format for Colors or Unicode for Characters. An example that you have given sir was Music, in which Melodies, Instrument type, Tempo and Sound Duration are all stored in their own ways.
 
 With this in mind, I propose a Special "Memory File" format that LLMs can use to store specific information that can be relevant for "Context Continuity" or to simulate a "Persistent Memory". Firt of, like in Music, multiple distinct "elements" must be identifies to know what the data really contains, such as the "Pitch", "Tone" etc. So for this data file, these data should be stored:
 
