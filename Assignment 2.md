@@ -8,9 +8,9 @@ I have though of a new type of data format (or atleast a type of Data Format tha
 
 As you have discussed sir, certain data requires more complex ways of storage than just the simple Hexadecimal or RGB format for Colors or Unicode for Characters. An example that you have given sir was Music, in which Melodies, Instrument type, Tempo and Sound Duration can all be stored in their own ways. (Though you explained that in reality, it was just instructions on how the speaker should vibrate.)
 
-With this in mind, I propose a Special "Memory File" format that LLMs can use to store specific information that can be relevant for "Context Continuity" or to simulate a "Persistent Memory". Firt of, like in Music, multiple distinct "elements" must be identifies to know what the data really contains, such as the "Pitch", "Tone" etc. So for this data file, these data should be stored:
+With this in mind, I propose a Special "Memory File" format that LLMs can use to store specific information that can be relevant for "Context Continuity" or to simulate a "Persistent Memory". First of, like in Music, multiple distinct "elements" must be identifies to know what the data really contains, such as the "Pitch", "Tone" etc. So for this data file, these data should be stored:
 
-a. Information Type - I propose that this can only be a limited group of keywords (just like as "int, char, bool, string, double, float") used to identify what "information" these memories will contain. These can include:
+a. Information Type - I propose that this can only be a limited group of keywords (just like "int, char, bool, string, double, float" are used to identify variable types) used to identify what "information" these memories will contain. These can include:
 "Event" - To signal that the memory file will contain multiple strings of discriptive texts recalling an Event.
 "Information" - To signal that the memory file will contain non-event type information but might still be discriptive such as Baking Instructions, Directions to a certain place or other similar information. 
 "User Characteristic" - To signal that the memory file will contain Important key words that describes the user, may it be certain characteristics, dislikes or similar informations.
@@ -18,13 +18,15 @@ a. Information Type - I propose that this can only be a limited group of keyword
 
 b. Sub Category - This is another piece of data that aides in further classifying the "Information Type" and it's possible contents. It varies depending ong the Inforamtion type such as "Place Name", "Weather Type" or "Activities" for "Event" type Information, "Name", "Age", "Gender" and such for User Characteristics, "Instruction", "Trivia", or "Rule" for "Information" type information and such, just so the AI or the Program can more easily know what category the data is supposed to be for.
 
-c. Date and Time - This is an optional piece of data that I propose that can be useful for the LLM to gain context and simulate more "immersion" for the user, specially when trying to recall "old memories" or to have a concept for the passing of time which might be helpful somewhere in the conversation.
+c. Date and Time - This is an optional piece of data that I propose that can be useful for the LLM to gain context and simulate more "immersion" for the user, specially when trying to recall "old memories" or to have a concept for the passing of time which might be helpful for certain topics or situations in a conversation.
 
 d. Summary - This is a short summary of the content of the Data, it might purely be keywords and tags, this is so that the LLM can retreive the important information a lot quicker instead of having to find the data in the more detailed recollection.
 
-e. Expanded Data - This is the somewhat "Raw" version of the data, which contains a detailed recollection of an event, a more specific preference of a user or others like that, this can be used by the LLM to "remember" the context of that specific "Memory".
+e. Expanded Data - This is the somewhat "Raw" version of the data, which may contain a detailed recollection of an event, a more specific preference of a user or others like that, this can be used by the LLM to "remember" the context and full details of that specific "Memory".
 
-This string of pure data will be stored in a single file, probably in the binary version of the plain text in a unicode or ascii format or a more efficient way, that requires a decoder for the LLM to actually recognize which data is useful and which section of the data is important for them based on their case.
+This string of pure data will be stored in a single file, probably in the binary version of the plain text in a unicode or ascii format or a more efficient way, that requires a decoder for the LLM to actually recognize which data is useful and which section of the data is important for them based on their case. 
+
+It might also be possible to instead have some sort of "Connector" in place of the Expanded data that connects to another file that contains the whole expanded data, this way, the Memory File and the Detailed Data are stored separately, allowing the Memory file to be lightweight while still giving the LLM the ability to "recall" the more detailed version of that memory.
 
 2. Another way to Represent Data
 
